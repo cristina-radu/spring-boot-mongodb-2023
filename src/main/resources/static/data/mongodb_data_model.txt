@@ -1,0 +1,339 @@
+ ============== EMPLOYEE collection =========================
+
+
+{
+	"firstName": "Maria",
+	"lastName": "Popa",
+	"department": {
+		"name": "Development"
+	},
+	"grade": {
+		"name": "Junior"
+	},
+	"salary": 2000,
+	"currency": "RON",
+	"address": {
+		"street": "Dumbrava",
+		"no": 4,
+		"building": "D1",
+		"apartment": 4
+	},
+	"employmentDate": "2023.03.21",
+	"city": "Bucharest"
+},{
+	"firstName": "George",
+	"lastName": "Paun",
+	"department": {
+		"name": "Testing"
+	},
+	"grade": {
+		"name": "Mid"
+	},
+	"salary": 3500,
+	"currency": "EURO",
+	"address": {
+		"street": "Lunca",
+		"no": 7,
+		"building": "A3",
+		"apartment": 19
+	},
+	"gradeIncrease": ["Mid"],
+	"promotions": [{
+			"salary": 2500,
+			"currency": "EURO",
+			"date": ""
+		},{
+			"salary": 3000,
+			"currency": "EURO",
+			"gradeIncrease": "Mid",
+			"date": ""
+		},{
+			"salary": 3500,
+			"currency": "EURO",
+			"date": ""
+		}], 
+	"employmentDate": "11.05.2016",
+	"city": "London"
+},{
+	"firstName": "Ana",
+	"lastName": "Radu",
+	"department": {
+		"name": "Development"
+	},
+	"grade": {
+		"name": "Consultant"
+	},
+	"salary": 5000,
+	"currency": "EURO",
+	"address": {
+		"street": "Domneasca",
+		"no": 8,
+		"building": "B3",
+		"apartment": 5
+	},
+	"gradeIncrease": ["Mid", "Senior", "Consultant"],
+	"promotions": [{
+			"salary": 2000,
+			"currency": "EURO",
+			"date": ""
+		},{
+			"salary": 3000,
+			"currency": "EURO",
+			"gradeIncrease": "Mid",
+			"date": ""
+		},{
+			"salary": 4000,
+			"currency": "EURO",
+			"gradeIncrease": "Development",
+			"date": ""
+		},{
+			"salary": 4300,
+			"currency": "EURO",
+			"date": ""
+		},{
+			"salary": 4700,
+			"currency": "EURO",
+			"gradeIncrease": "Consultant",
+			"date": ""
+		},{
+			"salary": 5000,
+			"currency": "EURO",
+			"date": ""
+		}],
+	"employmentDate": "21.03.2015",
+	"city": "London"
+},{
+	"firstName": "Mircea",
+	"lastName": "Darie",
+	"department": {
+		"name": "Testing"
+	},
+	"grade": {
+		"name": "Junior"
+	},
+	"salary": 3000,
+	"currency": "RON",
+	"address": {
+		"street": "Dumbrava",
+		"no": 47,
+		"building": "D1",
+		"apartment": 42
+	},
+	"promotions": [{
+			"salary": 3000,
+			"currency": "RON",
+			"gradeIncrease": null,
+			"date": ""
+		}],
+	"employmentDate": "08.09.2014",
+	"city": "Bucharest"
+},{
+	"firstName": "Oana",
+	"lastName": "Popescu",
+	"department": {
+		"name": "Development"
+	},
+	"grade": {
+		"name": "Junior"
+	},
+	"salary": 2500,
+	"currency": "RON",
+	"address": {
+		"street": "Lunca",
+		"no": 74,
+		"building": "G3",
+		"apartment": 19
+	},
+	"employmentDate": "21.03.2015",
+	"city": "Bucharest"
+},{
+	"firstName": "Mihai",
+	"lastName": "Nane",
+	"department": {
+		"name": "DevOps"
+	},
+	"grade": {
+		"name": "Senior"
+	},
+	"salary": 4000,
+	"currency": "EURO",
+	"address": {
+		"street": "Domneasca",
+		"no": 38,
+		"building": "H3",
+		"apartment": 5
+	},
+	"gradeIncrease": ["Mid", "Senior"],
+	"promotions": [{
+			"salary": 2300,
+			"currency": "EURO",
+			"gradeIncrease": "Mid",
+			"date": ""
+		},{
+			"salary": 2800,
+			"currency": "EURO",
+			"date": ""
+		},{
+			"salary": 3000,
+			"currency": "EURO",
+			"date": ""
+		},{
+			"salary": 3800,
+			"currency": "EURO",
+			"gradeIncrease": "Senior",
+			"date": ""
+		},{
+			"salary": 4000,
+			"currency": "EURO",
+			"date": ""
+		}], 
+	"employmentDate": "12.07.2014",
+	"city": "Paris"
+},{
+	"firstName": "Dumitru",
+	"lastName": "Mihalcea",
+	"department": {
+		"name": "DevOps"
+	},
+	"grade": {
+		"name": "Mid"
+	},
+	"salary": 3000,
+	"currency": "DOLLAR",
+	"address": {
+		"street": "Domneasca",
+		"no": 8,
+		"building": "B3",
+		"apartment": 63
+	},
+	"employmentDate": "14.08.2015",
+	"city": "New York"
+},{
+	"firstName": "Ana",
+	"lastName": "Dumitrache",
+	"department": {
+		"name": "Testing"
+	},
+	"grade": {
+		"name": "Junior"
+	},
+	"salary": 2500,
+	"currency": "RON",
+	"address": {
+		"street": "Dumbrava",
+		"no": 47,
+		"building": "D1",
+		"apartment": 4
+	},
+	"employmentDate": "24.04.2017",
+	"city": "Bucharest"
+},{
+	"firstName": "Marian",
+	"lastName": "Manole",
+	"department": {
+		"name": "Development"
+	},
+	"grade": {
+		"name": "Senior"
+	},
+	"salary": 4000,
+	"currency": "EURO",
+	"address": {
+		"street": "Lunca",
+		"no": 74,
+		"building": "G3",
+		"apartment": 161
+	},
+	"gradeIncrease": ["Mid", "Senior"],
+	"promotions": [{
+			"salary": 3000,
+			"currency": "EURO",
+			"gradeIncrease": "Mid",
+			"date": ""
+		},{
+			"salary": 3500,
+			"currency": "EURO",
+			"date": ""
+		},{
+			"salary": 3700,
+			"currency": "EURO",
+			"date": ""
+		},{
+			"salary": 4000,
+			"currency": "EURO",
+			"gradeIncrease": "Senior",
+			"date": ""
+		}], 
+	"employmentDate": "14.10.2015",
+	"city": "Paris"
+},{
+	"firstName": "Cristina",
+	"lastName": "Pop",
+	"department": {
+		"name": "Testing"
+	},
+	"grade": {
+		"name": "Mid"
+	},
+	"salary": 4000,
+	"currency": "RON",
+	"address": {
+		"street": "Domneasca",
+		"no": 38,
+		"building": "H3",
+		"apartment": 26
+	},
+	"gradeIncrease": ["Mid"],
+	"promotions": [{
+			"salary": 3500,
+			"currency": "RON",
+			"date": ""
+		},{
+			"salary": 4000,
+			"currency": "RON",
+			"gradeIncrease": "Mid",
+			"date": ""
+		}], 
+	"employmentDate": "16.09.2014",
+	"city": "Iasi"
+},{
+	"firstName": "Bogdan",
+	"lastName": "Popescu",
+	"department": {
+		"name": "DevOps"
+	},
+	"grade": {
+		"name": "Consultant"
+	},
+	"salary": 5000,
+	"currency": "DOLLAR",
+	"address": {
+		"street": "Domneasca",
+		"no": 320,
+		"building": "V3",
+		"apartment": 120
+	},
+	"gradeIncrease": ["Senior", "Consultant"],
+	"promotions": [{
+			"salary": 3800,
+			"currency": "DOLLAR",
+			"date": ""
+		},{
+			"salary": 4000,
+			"currency": "DOLLAR",
+			"gradeIncrease": "Senior",
+			"date": ""
+		},{
+			"salary": 4500,
+			"currency": "DOLLAR",
+			"date": ""
+		},{
+			"salary": 5000,
+			"currency": "DOLLAR",
+			"gradeIncrease": "Consultant",
+			"date": ""
+		}], 
+	"employmentDate": "17.10.2010",
+	"city": "New York"
+}
+
