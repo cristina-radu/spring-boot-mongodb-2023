@@ -1,11 +1,15 @@
 package com.company.demo.endpoint;
 
 import com.company.demo.document.Employee;
+import com.company.demo.request.GradeIncreaseDomainRequest;
 import com.company.demo.request.GradeRequest;
+import com.company.demo.service.EmployeeCriteriaQueryService;
 import com.company.demo.service.EmployeeMethodNameQueryService;
+import com.company.demo.service.EmployeeQueryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RequestMapping("employee")
@@ -13,6 +17,8 @@ import java.util.List;
 @RestController
 public class EmployeeController {
     private final EmployeeMethodNameQueryService employeeService;
+    private final EmployeeQueryService employeeQueryService;
+    private final EmployeeCriteriaQueryService employeeCriteriaQueryService;
 
     @GetMapping
     public List<Employee> getEmployeeList(){
@@ -60,4 +66,42 @@ public class EmployeeController {
         return employeeService.findBySalaryOrGrade(salary, grade);
     }
 
+    @GetMapping("/query/address")
+    public List<Employee> getByAddressNo(@RequestParam Integer addressNo){
+        return employeeQueryService.getByAddressNo(addressNo);
+    }
+
+    @GetMapping("/query/department-grade")
+    public List<Employee> getByDepartmentAndGrade(@RequestParam String department,
+                                                  @RequestParam String grade){
+        return employeeQueryService.getByDepartmentAndGrade(department, grade);
+    }
+
+    @GetMapping("/query/department-grade-pageable")
+    public List<Employee> getByDepartmentAndGradePageable(@RequestParam String department,
+                                                  @RequestParam String grade, @RequestParam int pageNo,
+                                                          @RequestParam int pageSize){
+        return employeeQueryService.getByDepartmentAndGradePageable(department, grade, pageNo, pageSize);
+    }
+
+    @GetMapping("/criteria-query/city-department")
+    public void deleteByCityAndDepartment(@RequestParam String city,
+                                                  @RequestParam String department){
+         employeeCriteriaQueryService.deleteBy(city, department);
+    }
+
+    @PutMapping("/criteria-query")
+    public void gradeIncrease(@RequestBody GradeIncreaseDomainRequest request) {
+        employeeCriteriaQueryService.gradeIncrease(request.getSalary(),
+                request.getCurrency(), request.getGrade(), request.getDepartment(), request.getNewSalaryIncrease(),
+                request.getNewCurrency(), request.getNewGrade());
+    }
+
+    @GetMapping("/aggregate")
+    public  void test(){
+        List<String> deps = new ArrayList<>();
+        deps.add("Development");
+        deps.add("DevOps");
+        employeeCriteriaQueryService.getSumByDepartment(deps);
+    }
 }
